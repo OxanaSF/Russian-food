@@ -19,14 +19,8 @@ body {
       width: 50%;
       position: absolute;
       box-shadow: 0 15px 60px rgba(0, 0, 0, 0.4);
-      opacity: .7;
+      opacity: 0.7;
       border-radius: 10px; }
-      @media (max-width: 1300px) {
-        .navbar-navigation-left .left-img {
-          width: 55%; } }
-      @media (max-width: 1000px) {
-        .navbar-navigation-left .left-img {
-          width: 65%; } }
     .navbar-navigation-left .left-img-1 {
       top: 15%;
       left: 15%; }
@@ -46,20 +40,22 @@ body {
         .navbar-navigation-left .left-img-3 {
           left: 25%; } }
     .navbar-navigation-right {
-      border-radius: 10%;
+      padding: 0 25px;
+      border-radius: 10% 0 0 0;
       width: 15vw;
       height: 100vh;
-      background-color: #d3ab;
+      font: 900;
+      background: linear-gradient(rgba(72, 110, 49, 0.8), rgba(72, 110, 49, 0.7), rgba(72, 110, 49, 0.6));
       position: fixed;
       right: -50vw;
       display: flex;
       justify-content: center;
       align-items: center;
       transition: right 0.8s cubic-bezier(1, 0, 0, 1); }
-      @media (max-width: 800px) {
+      @media (max-width: 900px) {
         .navbar-navigation-right {
           width: 100vw;
-          right: -100vw; } }
+          right: -150vw; } }
     .navbar-navigation .nav-list-item {
       list-style: none; }
     .navbar-navigation .nav-list-link {
@@ -68,14 +64,14 @@ body {
       font-weight: 300;
       letter-spacing: 2px;
       text-transform: capitalize;
-      color: #ffe3ed;
+      color: #000;
       text-decoration: none;
       display: block;
       margin: 20px;
       text-align: center;
-      transition: all .5s; }
+      transition: all 0.5s; }
       .navbar-navigation .nav-list-link:hover {
-        color: #d3ab;
+        color: #cef0ba;
         letter-spacing: 4px; }
       @media (max-width: 600px) {
         .navbar-navigation .nav-list-link {
@@ -121,74 +117,43 @@ body {
     transform: translate(-50%, -50%); }
 
 .about-us {
-  height: 90vh;
-  display: flex;
-  font-size: 60px; }
-  @media (max-width: 900px) {
-    .about-us {
-      height: 70vh; } }
-  .about-us-center {
-    overflow: hidden;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0, 300px;
-    box-sizing: border-box; }
-    .about-us-center h1 {
-      font-size: 60px; }
-    @media (max-width: 1300px) {
-      .about-us-center {
-        padding: 0 50px; } }
-    @media (max-width: 800px) {
-      .about-us-center {
-        width: 100%; } }
-    .about-us-center .stars {
-      margin: 30px 0; }
-      @media (max-width: 1000px) {
-        .about-us-center .stars {
-          margin: 15px 0; } }
-    .about-us-center .star {
-      font-size: 15px;
-      color: #d3ab;
-      margin-left: 10px; }
-      @media (max-width: 1000px) {
-        .about-us-center .star {
-          font-size: 12px; } }
-    .about-us-center .description {
-      font-family: "Josefin Sans", sans-serif;
-      font-size: 30px;
-      font-style: italic;
-      color: #ffe3ed;
-      justify-content: center;
-      padding-left: 200px;
-      padding-right: 200px;
-      font-weight: lighter; }
-      .about-us-center .description::first-letter {
-        padding-left: 50px; }
-      @media (max-width: 1600px) {
-        .about-us-center .description {
-          font-size: 18px; } }
-      @media (max-width: 1000px) {
-        .about-us-center .description {
-          font-size: 14px; } }
-      @media (max-width: 500px) {
-        .about-us-center .description {
-          font-size: 12px; } }
-
-.food-menu h1 {
-  margin-top: 10%;
+  margin: 100px 0;
+  padding: 0 100px;
   text-align: center;
-  font-size: 50px; }
+  font-size: 25px;
+  font-weight: lighter;
+  letter-spacing: 1px; }
+  .about-us h1 {
+    font-size: 60px; }
+  .about-us h3 {
+    font-size: 30px;
+    font-family: "Josefin Sans", sans-serif; }
+  .about-us .paragraph {
+    text-align: center;
+    color: #ffe3ed;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 22px;
+    font-style: italic;
+    color: #ffe3ed;
+    font-weight: lighter; }
+    .about-us .paragraph::first-letter {
+      padding-left: 50px; }
+  .about-us .stars {
+    margin: 10px 0; }
+  .about-us .star {
+    font-size: 15px;
+    color: #486e31;
+    margin-left: 10px; }
 
-.gallery .cards-wrapper {
-  margin-top: 5%;
-  display: flex;
-  flex-wrap: wrap;
-  padding-left: 20px; }
+.food-menu .main-heading {
+  display: grid;
+  justify-items: center;
+  font-size: 60px; }
+
+.cards-gallery {
+  margin: 5px;
+  display: grid;
+  grid-template-columns: auto auto auto; }
 
 .footer {
   padding: 70px 0;
@@ -211,9 +176,9 @@ body {
       text-decoration: none;
       font-size: 40px;
       color: rgba(255, 227, 237, 0.4);
-      transition: color .7s; }
+      transition: color 0.7s; }
       .footer .social-media-link:hover {
-        color: #d3ab; }
+        color: #486e31; }
   .footer-copyright-paragraph {
     font-family: "Josefin Sans", sans-serif;
     font-style: 18px;
@@ -246,7 +211,7 @@ body {
     .hamburger-menu .menu-line {
       width: 100%;
       height: 4px;
-      background-color: #d3ab;
+      background-color: #486e31;
       transform-origin: right;
       transition: all .5s .5s; }
       @media (max-width: 800px) {
@@ -258,11 +223,11 @@ body {
 
 .logo {
   font-size: 40px;
-  color: #d3ab;
-  width: 90px;
-  height: 90px;
+  color: #486e31;
+  width: 80px;
+  height: 80px;
   margin-right: 20px;
-  border: 3px solid #d3ab;
+  border: 3px solid #486e31;
   border-radius: 50%;
   background-color: rgba(0, 0, 0, 0.6);
   display: flex;
@@ -271,11 +236,11 @@ body {
 
 .logo-2 {
   font-size: 25px;
-  color: #d3ab;
+  color: #486e31;
   width: 55px;
   height: 55px;
   margin-right: 20px;
-  border: 3px solid #d3ab;
+  border: 3px solid #486e31;
   border-radius: 50%;
   background-color: rgba(0, 0, 0, 0.6);
   display: flex;
@@ -283,8 +248,8 @@ body {
   align-items: center; }
 
 .main-name {
-  font-family: "Nunito", sans-serif;
-  font-size: 50px;
+  font-family: "Libre Baskerville", lighter;
+  font-size: 35px;
   color: #ffe3ed;
   font-weight: 300;
   letter-spacing: 2px;
@@ -293,13 +258,14 @@ body {
 .main-name-2 {
   font-family: "Nunito", sans-serif;
   font-size: 20px;
-  color: #ffe3ed;
+  color: #486e31;
   font-weight: 300;
   letter-spacing: 2px;
   text-transform: uppercase; }
 
 .sub-name {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Libre Baskerville", lighter;
+  font-weight: lighter;
   font-size: 18px;
   color: #ffe3ed;
   text-align: center;
@@ -319,13 +285,13 @@ body {
 .main-heading {
   font-family: "Dancing Script", cursive;
   font-size: 100px;
-  font-weight: 300;
-  color: #d3ab;
+  color: #486e31;
   margin-bottom: 40px; }
 
 .sub-heading {
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 50px;
+  font-family: "Libre Baskerville", lighter;
+  font-size: 45px;
+  font-weight: lighter;
   font-weight: 350;
   color: #ffe3ed;
   margin-bottom: 80px; }
@@ -337,18 +303,17 @@ body {
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: #d3ab;
+  color: #486e31;
   background-color: rgba(0, 0, 0, 0.6);
-  border: 1px solid #d3ab;
+  border: 1px solid #486e31;
   outline: none;
   cursor: pointer;
   font-weight: 600; }
   .main-btn:hover {
-    background-color: #d3ab;
+    background-color: #486e31;
     color: #262626; }
 
 .card {
-  width: 31.3333%;
   height: 30vw;
   position: relative;
   overflow: hidden;
@@ -398,7 +363,7 @@ body {
           font-size: 15px; } }
       @media (max-width: 500px) {
         .card-overlay-paragraph {
-          display: none; } }
+          display: 12px; } }
     .card-overlay-btn {
       width: 150px;
       height: 40px;

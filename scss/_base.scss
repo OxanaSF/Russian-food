@@ -1,17 +1,17 @@
 $color-dark: #262626;
 $color-black: #000;
 $color-primary: #d3ab;
+$color-primary:#486e31;
 
 $color-white: #fff;
 
 $color-secondary: #ffe3ed;
+$color-secondary-2: #0ae779;
 
-
-
-$font-dancingScript: 'Dancing Script', cursive;
-$font-josefinSans: 'Josefin Sans', sans-serif;
-$font-nunito: 'Nunito', sans-serif;
-
+$font-dancingScript: "Dancing Script", cursive;
+$font-josefinSans: "Josefin Sans", sans-serif;
+$font-nunito: "Nunito", sans-serif;
+$font-baskerville: "Libre Baskerville", lighter;
 
 @mixin flexLayout {
   display: flex;
@@ -32,17 +32,16 @@ $font-nunito: 'Nunito', sans-serif;
   transform: translate(-50%, -50%);
 }
 
-%fullSpace  {
+%fullSpace {
   width: 100%;
   height: 100%;
 }
-
 
 * {
   margin: 0;
   padding: 0;
 }
 
-body {  
+body {
   background-color: $color-dark;
 }
